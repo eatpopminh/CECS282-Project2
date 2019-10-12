@@ -1,3 +1,6 @@
+#include <iostream>
+#include <string>
+
 using namespace std;
 
 class Student
@@ -21,7 +24,5 @@ class Student
 		string getStatus() const;
 		void setStatus(string stat);
 		void setTimeOfAction(Time act);
-		
 			
-		
 };
