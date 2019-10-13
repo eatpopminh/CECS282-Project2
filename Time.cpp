@@ -30,11 +30,13 @@ string Time :: toString() const //return time in the following format Www Mmm dd
 string Time :: getMMDDYYYY() const		//return time in the following format MM/DD/YYYY
 {
 	struct tm *myString = localtime(&secs);
+	return (to_string(myString -> tm_mon+1)+"/"+to_string(myString -> tm_mday)+"/"+to_string(myString -> tm_year + 1900));
 	
 }
 string Time :: getYear() const 			//return year of time.
 {
-	
+	struct tm *myString = localtime(&secs);
+	return to_string(myString -> tm_year +1900);
 }
 int Time :: compareTime(const Time& t)
 {
@@ -44,12 +46,17 @@ int main()
 {
 	cout<<"HELLO"<<endl;
 	Time t;
-	cout<<t.toString()<<endl;;
+	cout<<t.toString()<<endl;
+	cout<<t.getMMDDYYYY()<<endl;
+	cout<<t.getYear()<<endl;
 	
-	//time_t sec = time(0);
-	//struct tm *myTime = localtime(&sec);
+	
+	time_t sec = time(0);
+	time_t sec2;
+	time(&sec2);
+	struct tm *myTime = localtime(&sec2);
 	//string mystring = to_string(myTime->tm_mon+1);
-//	string mystring = asctime(myTime);
-//	cout<<mystring<<endl;
+	string mystring = asctime(myTime);
+	cout<<mystring<<endl;
 	
 }
