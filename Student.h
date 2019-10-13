@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string>
+
 #include "Time.h"
 
 using namespace std;
@@ -32,3 +33,5 @@ class Student
 		void setTimeOfAction(Time act);
 			
 };
+
+#endif

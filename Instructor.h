@@ -4,6 +4,9 @@
 
 
 #include <iostream>
+#include "Student.h"
+#include "Course.h"
+#include "Time.h"
 
 using namespace std;
 
@@ -34,3 +37,5 @@ class Instructor
 			
 	
 };
+
+#endif
