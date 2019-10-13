@@ -23,6 +23,7 @@ class Instructor
 			Instructor(string name, string status, Course* crs, int num);
 			Instructor(const Instructor& i);
 			~Instructor();
+			
 			Course* getCourse() const;
 			int getNumberOfCoursesTaught() const;
 			string getName() const;

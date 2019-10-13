@@ -23,6 +23,7 @@ class Student
 		Student(string id, string name, string level, Time data_of_action);
 		Student(const Student& s);
 		Student& operator=(const Student& s);
+		
 		string getLevel() const;
 		string getId() const;
 		string getName() const;

@@ -25,6 +25,7 @@ class Course
 		Course(const Course& c);
 		Course& operator=(const Course& c);
 		~Course();
+		
 		Student* getStudent() const;
 		string getCourseNumber() const;
 		string getCourseName() const;

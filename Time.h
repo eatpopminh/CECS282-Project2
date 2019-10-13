@@ -1,13 +1,9 @@
 #ifndef TIME_H
 #define TIME_H
 
-
-
 #include <iostream>
-#include <ctime>
 #include <string>
 using namespace std;
-
 class Time
 {
 	private:
@@ -16,6 +12,7 @@ class Time
 		Time();
 		Time(time_t t);
 		Time(const Time& t);
+		
 		string toString() const;		//return time in the following format Www Mmm dd hh:mm:ss yyyy
 		string getMMDDYYYY() const;		//return time in the following format MM/DD/YYYY
 		string getYear() const; 			//return year of time.
