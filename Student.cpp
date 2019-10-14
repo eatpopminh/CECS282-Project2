@@ -10,11 +10,14 @@ Student :: Student()
 }
 Student :: Student(string id, string name, string level, Time data_of_action)
 {
-	
+	this->id = id;
+	this->name = name;
+	this->level = level;
+	this->date_of_action = date_of_action;
 }
 Student :: Student(const Student& s)
 {
-	
+	this->
 }
 Student :: Student& operator=(const Student& s)
 {

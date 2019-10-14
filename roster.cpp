@@ -12,14 +12,14 @@ const int MAXCOURSE = 3;
 int main()
 {
     //time_t secs = time(0);//This is the current time (GMT +0)
-    Time t();
+    Time t;
     
     
 //    Time last_date(secs-10000);//Set up the last date of enrollment
     
-//    Student* students = new Student[CAPACITY];//Set up the student dynamic array with CAPACITY. The CAPACITY for this test is 2.
+    Student* students = new Student[CAPACITY];//Set up the student dynamic array with CAPACITY. The CAPACITY for this test is 2.
     //Create 4 students
-//    Student s("123456789", "Kobe Bryant", "Senior", 0);
+    Student s("123456789", "Kobe Bryant", "Senior", 0);
 //    Student s1("987654321", "Lebron James", "Sophomore", 1000);
 //    Student s2("123654987", "James Harden", "Senior", secs - 10);
 //    Student s3("345698712", "Anthony Davis", "Sophomore", 1007770);
