@@ -1,9 +1,10 @@
 #include <iostream>
 #include <string>
-using namespace std;
-
 #include "Student.h"
 
+
+
+using namespace std;
 Student :: Student()
 {
 	
@@ -17,43 +18,50 @@ Student :: Student(string id, string name, string level, Time data_of_action)
 }
 Student :: Student(const Student& s)
 {
-	this->
+	this->id = s.id;
+	this->name = s.name;
+	this->level = s.level;
+	this->date_of_action = s.date_of_action;
 }
-Student :: Student& operator=(const Student& s)
+Student& Student :: operator=(const Student& s)
 {
-	
+	this->id = s.id;
+	this->name = s.name;
+	this->level = s.level;
+	this->date_of_action = s.date_of_action;
+	return (*this);
 }
 string Student :: getLevel() const
 {
-	
+	return level;
 }
 string Student :: getId() const
 {
-	
+	return id;
 }
 string Student :: getName() const
 {
-	
+	return name;
 }
 string Student :: getDateOfAction() const		//return as Www Mmm dd hh:mm:ss yyyy
 {
-	
+	return date_of_action.toString();
 }
 Time Student :: getTimeOfAction() const		//return date_of_action in seconds
 { 
-
+	return date_of_action;
 }
 string Student :: getStatus() const
 {
-	
+	return status;
 }
 void Student :: setStatus(string stat)
 {
-	
+	this->status = stat;
 }
 void Student :: setTimeOfAction(Time act)
 {
-	
+	this->date_of_action = act;
 }
 		
 		
