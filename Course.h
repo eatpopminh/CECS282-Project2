@@ -4,7 +4,7 @@
 
 
 #include <iostream>
-#include <ctime>
+
 #include <string>
 #include "Time.h"
 #include "Student.h"
@@ -19,7 +19,8 @@ class Course
 		string semester; 		//Fall, Winter, Spring, Summer
 		Time last_date_to_enroll;	//time in secs
 		Student* students;		//pointer to array of students
-		public:
+		
+	public:
 		Course();
 		Course(string num, string name, string sem, Time last_date, Student* stdts, int numOfEnroll);	
 		Course(const Course& c);
@@ -36,7 +37,7 @@ class Course
 		Time getTimeLastDateToEnroll() const;	//return in seconds
 		void setNumberOfEnrollment(int ne);
 		void setRoster(Student* stdts);
-		
+			
 };
 
 #endif

@@ -41,10 +41,17 @@ string Time :: getYear() const 			//return year of time.
 }
 int Time :: compareTime(const Time& t)
 {
-			
+	return 0;		
 }
 //int main()
 //{
+//	int var = 10000;
+//	Time t(var);
+//	cout<<t.toString()<<endl;
+//	var=0;
+//	Time s(t);
+//	cout<<s.toString()<<endl;
+	
 //	cout<<"HELLO"<<endl;
 //	Time t = 0;
 //	cout<<t.toString()<<endl;
@@ -75,5 +82,5 @@ int Time :: compareTime(const Time& t)
 //	//string mystring = to_string(myTime->tm_mon+1);
 //	//string mystring = asctime(myTime);
 //	//cout<<mystring<<endl;
-//	
+//	return 0;	
 //}

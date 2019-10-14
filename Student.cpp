@@ -4,6 +4,7 @@
 #include "Time.h"
 
 using namespace std;
+
 Student :: Student()
 {
 	this->id = "unknown";
@@ -11,7 +12,7 @@ Student :: Student()
 	this->level = "unknown";
 	this->date_of_action = 0;
 }
-Student :: Student(string id, string name, string level, Time data_of_action)
+Student :: Student(string id, string name, string level, Time date_of_action)
 {
 	this->id = id;
 	this->name = name;
@@ -64,6 +65,12 @@ void Student :: setStatus(string stat)
 void Student :: setTimeOfAction(Time act)
 {
 	this->date_of_action = act;
+}
+
+int main()
+{
+	 Student s("123456789", "Kobe Bryant", "Senior", 0);
+	return 0;
 }
 		
 		
