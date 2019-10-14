@@ -18,7 +18,7 @@ Time :: Time(time_t t)
 
 Time :: Time(const Time& t)
 {
-	
+	this->secs = t.secs; 
 }
 string Time :: toString() const //return time in the following format Www Mmm dd hh:mm:ss yyyy
 {

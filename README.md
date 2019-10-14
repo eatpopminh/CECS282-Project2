@@ -1,2 +1,2 @@
-# CECS282 Project2
+# CECS282-Project2
  

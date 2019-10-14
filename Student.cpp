@@ -1,13 +1,15 @@
 #include <iostream>
 #include <string>
 #include "Student.h"
-
-
+#include "Time.h"
 
 using namespace std;
 Student :: Student()
 {
-	
+	this->id = "unknown";
+	this->name = "unknown";
+	this->level = "unknown";
+	this->date_of_action = 0;
 }
 Student :: Student(string id, string name, string level, Time data_of_action)
 {
