@@ -21,10 +21,10 @@ Student :: Student(string id, string name, string level, Time date_of_action)
 }
 Student :: Student(const Student& s)
 {
-	this->id = s.id;
-	this->name = s.name;
-	this->level = s.level;
-	this->date_of_action = s.date_of_action;
+	this->id = s.getId();
+	this->name = s.getName();
+	this->level = s.getLevel();
+	this->date_of_action = s.getTimeOfAction();
 }
 Student& Student :: operator=(const Student& s)
 {
